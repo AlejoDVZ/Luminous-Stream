@@ -14,8 +14,6 @@ document.addEventListener('click', e => {
         $signUp.classList.toggle('active')
     }
 });
-
-
 const url = 'http://localhost:3000/usuarios'
 
 registro.addEventListener('click',(e) => {
