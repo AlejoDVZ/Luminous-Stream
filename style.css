@@ -1,0 +1,138 @@
+*{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: whitesmoke;
+	font-weight: normal;
+
+}
+body{
+	 background:  white;
+     margin: 0 0;
+    padding: 0 0;
+}
+.elements_nav a{
+    margin: 0 1rem;
+    display: inline-flex;
+    justify-content:space-between;
+}
+.navegacion{ /*barra de navegacion en el header*/
+    height: 3.5rem;
+ 	background: #3550FD;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 30px 30px;
+    font-size: 1rem;
+}
+header a{ /*links de la nav del header*/
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.foot {
+  background-color: #3550FD;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  border-radius: 25px 25px 0 0 ;
+  text-align: center;
+}
+
+#inventario{ /*estructura del contenido del "home"*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*disposicion del contenido*/
+    width: 80%;
+    padding: 0 3rem;
+}
+#inventario article{
+    display: flex;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    border-radius: 1em;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+    max-width: 70%;
+    max-height: 20rem;
+    
+}
+#inventario article figure{
+    
+    max-height: 100%;
+    position: relative;
+    margin: 0 0;
+    text-overflow: ellipsis;
+}
+#inventario article figure:hover figcaption{
+    display: block;
+    animation-duration: 2s;
+}
+#inventario article figure figcaption{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+#inventario article figure img{
+    width: 100%;
+    object-fit: cover;
+ }
+#inventario article figure p{
+    margin: 5px 7px;
+    text-align: justify;
+    text-overflow: ellipsis;
+
+ }
+ #inventario article figure h2{
+    padding-top: 0.5;
+    text-align: center;
+ }
+ /*
+ .item{         /*clase para cada "item" de la pagina, ya sea pelicula o serie
+    max-height: 300px;
+    display: flex;
+    margin: 10px;
+    color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    border-radius: 1em;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+.item figure{
+    position: relative; /*para mantener la hubiacion relativa, para que los textos se hubiquen correctamente
+}
+.item figure:hover figcaption{
+    display: block;
+    animation-duration: 1s; /*funcion para que aparezca el nombre y descripcion de la pelicula al pasar el ratos por encima
+} 
+.item figure figcaption{ /*setea los valores para que se realice bien el hover
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.item h2{ /*titulo de los items
+    padding-top: 5px;
+    text-align: center;
+}
+.item p{ /*descripcion de los items
+    margin: 5px 7px;
+    text-align: justify;
+    color: var(--naranja);  
+}
+.item img{/*imagen de los items
+    width: 100%;
+    align-items: stretch;
+}
+*/
